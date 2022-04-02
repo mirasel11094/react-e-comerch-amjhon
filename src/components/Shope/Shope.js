@@ -9,14 +9,14 @@ const Shope = () => {
       const [products, setProducts] = useProducts();
       const [cart, setCart] = useState([]);
 
-      useEffect(() => {
-            fetch('products.json')
-                  .then(response => response.json())
-                  .then(data =>
-                        setProducts(data)
-                  );
+      // useEffect(() => {
+      //       fetch('products.json')
+      //             .then(response => response.json())
+      //             .then(data =>
+      //                   setProducts(data)
+      //             );
             
-      }, [])
+      // }, [])
 
       useEffect( () => {
             const storedCart = getStoredCart();
